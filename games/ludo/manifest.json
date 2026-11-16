@@ -1,0 +1,19 @@
+{
+  "id": "ludo",
+  "name": "Ludo",
+  "category": "luck",
+  "icon": "♟️",
+  "description": "Race four pawns around the board and into the centre.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

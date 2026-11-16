@@ -1,0 +1,26 @@
+# Netlify build settings. Netlify reads this file automatically.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# The site uses #/hash routes, so no redirect rules are needed.
+# These headers keep the site safe and cache the built assets.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Games run in sandboxed iframes with an opaque origin, so their files need CORS
+# (fonts/scripts are fetched "cross-origin"). Only our own site may embed them.
+[[headers]]
+  for = "/games/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Security-Policy = "frame-ancestors 'self'"
+    Cache-Control = "public, max-age=300"

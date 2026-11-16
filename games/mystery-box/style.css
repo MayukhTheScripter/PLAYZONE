@@ -1,0 +1,15 @@
+/* Mystery Box */
+.m-stage { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; justify-content: center; align-items: center; }
+.m-meta { color: var(--muted); font-size: 15px; text-align: center; }
+.m-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(8px, 2.5vw, 16px); width: min(100%, 460px); }
+.m-grid.off { pointer-events: none; }
+.m-box { position: relative; appearance: none; aspect-ratio: 1; border-radius: 16px; border: 2px solid var(--line); background: color-mix(in srgb, var(--fg) 7%, transparent); color: var(--fg); cursor: pointer; padding: 0; overflow: hidden; transition: transform 0.12s, opacity 0.2s; }
+.m-box:active { transform: scale(0.95); }
+.m-lid { font-size: clamp(44px, 14vw, 80px); display: grid; place-items: center; height: 100%; transition: transform 0.35s, opacity 0.3s; }
+.m-box.open .m-lid { transform: translateY(-120%) rotate(-25deg); opacity: 0; }
+.m-in { position: absolute; inset: 0; display: grid; place-items: center; align-content: center; text-align: center; gap: 2px; opacity: 0; transition: opacity 0.3s 0.15s; }
+.m-box.open .m-in { opacity: 1; }
+.m-box.open { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.m-e { font-size: clamp(30px, 10vw, 54px); line-height: 1; }
+.m-t { font-size: clamp(11px, 3vw, 14px); font-weight: 800; padding: 0 4px; }
+.m-box.dim { opacity: 0.35; }

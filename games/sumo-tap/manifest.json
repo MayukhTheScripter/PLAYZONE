@@ -1,0 +1,19 @@
+{
+  "id": "sumo-tap",
+  "name": "Sumo Tap",
+  "category": "reaction",
+  "icon": "🤼",
+  "description": "Tap as fast as you can to shove your rival out of the ring.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": false
+}

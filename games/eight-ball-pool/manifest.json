@@ -1,0 +1,20 @@
+{
+  "id": "eight-ball-pool",
+  "name": "8-Ball Pool",
+  "category": "arcade",
+  "icon": "🎱",
+  "description": "Pot your group, then sink the 8-ball. Best of several frames.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local",
+    "online"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

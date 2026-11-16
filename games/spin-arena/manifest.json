@@ -1,0 +1,19 @@
+{
+  "id": "spin-arena",
+  "name": "Spin Arena",
+  "category": "arcade",
+  "icon": "🌀",
+  "description": "Ram rival spinning blades out of the stadium.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": false
+}

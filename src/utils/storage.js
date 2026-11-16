@@ -1,0 +1,25 @@
+// Safe wrappers around localStorage. Some browsers (private mode) block it,
+// so every call is wrapped in try/catch and the app keeps working without it.
+const PREFIX = 'playzone.';
+
+export function load(key, fallback) {
+  try {
+    const raw = localStorage.getItem(PREFIX + key);
+    return raw === null ? fallback : JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
+}
+
+export function save(key, value) {
+  try {
+    localStorage.setItem(PREFIX + key, JSON.stringify(value));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function remove(key) {
+  try { localStorage.removeItem(PREFIX + key); } catch { /* ignore */ }
+}

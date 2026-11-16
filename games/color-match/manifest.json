@@ -1,0 +1,19 @@
+{
+  "id": "color-match",
+  "name": "Color Match",
+  "category": "arcade",
+  "icon": "\ud83c\udfa8",
+  "description": "Send each falling blob to its matching colour lane before it lands.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

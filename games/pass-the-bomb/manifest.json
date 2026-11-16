@@ -1,0 +1,19 @@
+{
+  "id": "pass-the-bomb",
+  "name": "Pass the Bomb",
+  "category": "luck",
+  "icon": "\ud83d\udca3",
+  "description": "Pass the ticking bomb before it blows.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 2,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

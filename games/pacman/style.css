@@ -1,0 +1,10 @@
+/* Pacman */
+.pm-pad { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-areas: ". u ." "l . r" ". d ."; gap: 4px; width: 150px; margin: 4px auto 0; }
+.pm-pad button { height: 44px; border-radius: 12px; border: 2px solid var(--line); background: color-mix(in srgb, var(--fg) 8%, transparent); color: var(--fg); font-size: 18px; touch-action: manipulation; cursor: pointer; }
+.pm-pad button[data-d="0,-1"] { grid-area: u; } .pm-pad button[data-d="-1,0"] { grid-area: l; } .pm-pad button[data-d="1,0"] { grid-area: r; } .pm-pad button[data-d="0,1"] { grid-area: d; }
+.pm-pad button:active { background: var(--accent); color: #111; }
+
+/* controls float over the maze so the maze can use the whole screen */
+.pm-pad { position: absolute; right: 10px; bottom: 10px; width: 156px; margin: 0; z-index: 6; opacity: 0.42; }
+.pm-pad button { height: 50px; background: #0b1220aa; color: #fff; border-color: #ffffff66; }
+.pm-pad:active, .pm-pad button:active { opacity: 0.9; }

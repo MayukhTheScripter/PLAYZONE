@@ -1,0 +1,19 @@
+{
+  "id": "chess",
+  "name": "Chess",
+  "category": "party",
+  "icon": "\u265f\ufe0f",
+  "description": "Classic chess against a friend or the Computer.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 2
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

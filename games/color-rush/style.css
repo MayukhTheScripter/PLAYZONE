@@ -1,0 +1,16 @@
+/* Color Rush - styles only this game uses. */
+.cr-top { display: flex; justify-content: space-between; align-items: center; font-family: var(--display); font-size: clamp(18px, 5vw, 28px); padding: 0 6px; }
+.cr-t::after { content: " s"; font-size: 0.6em; color: var(--muted); }
+.cr-c { font-size: 0.65em; color: var(--accent, #ffd84a); }
+.cr-s::before { content: "Score "; font-size: 0.6em; color: var(--muted); }
+.cr-word { flex: 1; min-height: 120px; display: grid; place-items: center; position: relative; background: #1a1d26; border-radius: 16px; overflow: hidden; }
+.cr-word b { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 16vw, 96px); letter-spacing: 2px; text-shadow: 0 0 2px #000, 0 0 10px rgba(0,0,0,0.5); }
+.cr-word.pop b { animation: cr-pop 0.15s ease-out; }
+.cr-word i { position: absolute; right: 12px; top: 6px; font-style: normal; font-size: 32px; font-weight: 800; }
+.cr-word i.ok { color: #46d17f; } .cr-word i.bad { color: #ff6b81; }
+@keyframes cr-pop { from { transform: scale(0.85); opacity: 0.4; } to { transform: scale(1); opacity: 1; } }
+.cr-btns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; touch-action: manipulation; }
+.cr-btns.cr-n5, .cr-btns.cr-n6 { grid-template-columns: repeat(3, 1fr); }
+.cr-btn { appearance: none; border: 3px solid rgba(255,255,255,0.35); border-radius: 16px; min-height: clamp(64px, 14vh, 110px); cursor: pointer; position: relative; box-shadow: 0 4px 0 rgba(0,0,0,0.4); }
+.cr-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,0.4); }
+.cr-k { position: absolute; left: 8px; top: 4px; font: 700 12px var(--display); color: rgba(0,0,0,0.55); }

@@ -1,0 +1,19 @@
+{
+  "id": "mystery-box",
+  "name": "Mystery Box",
+  "category": "luck",
+  "icon": "\ud83c\udf81",
+  "description": "Open a box and hope for treasure, not a trap.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

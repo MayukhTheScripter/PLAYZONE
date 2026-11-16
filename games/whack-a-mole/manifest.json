@@ -1,0 +1,19 @@
+{
+  "id": "whack-a-mole",
+  "name": "Whack-a-Mole",
+  "category": "reaction",
+  "icon": "\ud83d\udd28",
+  "description": "Whack the moles before they hide.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": false
+}

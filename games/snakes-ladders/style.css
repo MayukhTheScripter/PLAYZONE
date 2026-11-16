@@ -1,0 +1,22 @@
+/* Snakes & Ladders - styles that only this game uses. */
+/* snakes and ladders */
+
+.sl-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(10, 1fr); grid-template-rows: repeat(10, 1fr); border: 2px solid var(--fg); border-radius: 6px; overflow: hidden; }
+
+.sl-c { background: var(--surface); font-family: var(--mono); font-size: 2.3cqw; color: var(--muted); padding: 2px 3px; }
+
+.sl-over { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+.sl-p { position: absolute; width: 6.6%; aspect-ratio: 1; transform: translate(-50%, -50%); transition: left 0.14s, top 0.14s; z-index: 2; }
+
+.sl-p svg { width: 100%; height: 100%; display: block; }
+
+.sl-grid { border-color: var(--accent); box-shadow: 0 0 24px oklch(0.8 0.14 200 / 0.35); }
+
+.sl-c { background: oklch(0.2 0.04 268); color: oklch(0.62 0.05 250); }
+
+.sl-over { filter: drop-shadow(0 0 2px oklch(1 0 0 / 0.45)); }
+
+.sl-over { filter: none; opacity: 0.78; }
+
+.sl-c { border: 1px solid oklch(0.5 0.04 260 / 0.55); font-weight: 800; font-size: 3cqw; color: oklch(0.82 0.03 250); align-items: flex-start; justify-content: flex-start; padding: 2px 4px; }

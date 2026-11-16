@@ -1,0 +1,19 @@
+{
+  "id": "brick-breaker",
+  "name": "Brick Breaker",
+  "category": "arcade",
+  "icon": "\ud83e\uddf1",
+  "description": "Smash every brick with the bouncing ball.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

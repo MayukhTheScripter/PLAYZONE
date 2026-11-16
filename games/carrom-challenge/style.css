@@ -1,0 +1,9 @@
+/* Carrom Challenge - the table uses the whole screen, the slider floats over it */
+.cr-wrap { flex: 1; min-height: 0; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.cr-board { --cb: min(100vw, 100dvh - 48px); width: var(--cb); height: var(--cb); flex: none; position: relative; display: flex; }
+.cr-board .arena { flex: 1; border-radius: 6px; }
+.cr-ctl { position: absolute; left: 12px; right: 12px; bottom: 4px; display: grid; gap: 0; opacity: 0.55; z-index: 6; }
+.cr-ctl:active { opacity: 0.95; }
+.cr-ctl label { display: grid; gap: 0; color: #fff; font-size: 12px; text-align: center; text-shadow: 0 1px 2px #000; }
+.cr-sl { width: 100%; height: 30px; accent-color: var(--accent); }
+.cr-go { display: none; }

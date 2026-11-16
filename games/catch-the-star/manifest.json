@@ -1,0 +1,19 @@
+{
+  "id": "catch-the-star",
+  "name": "Catch the Star",
+  "category": "reaction",
+  "icon": "\u2b50",
+  "description": "Slide the basket and catch falling stars, dodge the rocks.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

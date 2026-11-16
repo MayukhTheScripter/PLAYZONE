@@ -1,0 +1,18 @@
+/* Pass the Bomb */
+.b-stage { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 8px; transition: background 0.2s; }
+.b-stage.boom { animation: b-shake 0.4s; background: radial-gradient(circle, #ff7a1855, transparent 70%); }
+.b-ring { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.b-chip { padding: 5px 12px; border-radius: 99px; border: 2px solid var(--pc); font-weight: 700; font-size: 14px; opacity: 0.85; }
+.b-chip.has { background: var(--pc); color: #111; opacity: 1; transform: scale(1.1); }
+.b-chip.out { opacity: 0.35; text-decoration: line-through; }
+.b-bomb { font-size: clamp(90px, 28vw, 160px); line-height: 1; filter: drop-shadow(0 8px 14px #000a); }
+.b-bomb.toss { animation: b-toss 0.35s ease-out; }
+.b-bomb.hot { animation: b-pulse 0.3s infinite alternate; }
+.b-bomb.gone { animation: b-boom 0.5s forwards; }
+.b-hold { font-size: clamp(17px, 4.6vw, 24px); font-weight: 700; text-align: center; }
+.b-pass { min-width: 220px; min-height: 64px; font-size: 22px; font-family: var(--display); }
+.b-note { color: var(--muted); font-size: 14px; min-height: 1.2em; }
+@keyframes b-toss { from { transform: translateY(-40px) rotate(-30deg) scale(0.8); } to { transform: none; } }
+@keyframes b-pulse { to { transform: scale(1.1) rotate(4deg); filter: drop-shadow(0 0 22px #ff3b1a) hue-rotate(-20deg); } }
+@keyframes b-boom { 0% { transform: scale(1); } 40% { transform: scale(2.4); opacity: 1; } 100% { transform: scale(3); opacity: 0; } }
+@keyframes b-shake { 20% { transform: translate(-6px, 3px); } 40% { transform: translate(6px, -3px); } 60% { transform: translate(-4px, 2px); } 80% { transform: translate(4px, -2px); } }

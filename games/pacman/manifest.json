@@ -1,0 +1,19 @@
+{
+  "id": "pacman",
+  "name": "Pacman",
+  "category": "arcade",
+  "icon": "<svg viewBox=\"0 0 40 40\" width=\"1em\" height=\"1em\" style=\"vertical-align:-0.12em\"><path d=\"M20 20L35 10A18 18 0 1 0 35 30Z\" fill=\"#ffd23a\" stroke=\"#c98a0a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><circle cx=\"21\" cy=\"9.5\" r=\"2.4\" fill=\"#222\"/></svg>",
+  "description": "Gobble every dot in the maze, dodge the ghosts and snack on them after a power pellet.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

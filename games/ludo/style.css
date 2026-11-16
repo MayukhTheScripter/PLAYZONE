@@ -1,0 +1,24 @@
+/* Ludo - styles that only this game uses. */
+/* ludo */
+
+.ludo-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(15, 1fr); grid-template-rows: repeat(15, 1fr); border: 2px solid var(--fg); border-radius: 6px; overflow: hidden; background: var(--bg); }
+
+.lc { border: 0.5px solid color-mix(in srgb, var(--fg) 16%, transparent); position: relative; }
+
+.lc.hc { background: color-mix(in srgb, var(--yc) 70%, var(--surface)); }
+
+.lc.yard-in { background: var(--surface); border: 0; }
+
+.ludo-ctr { position: absolute; left: 40%; top: 40%; width: 20%; height: 20%; background: conic-gradient(from -45deg, var(--c1) 0 90deg, var(--c2) 90deg 180deg, var(--c3) 180deg 270deg, var(--c0) 270deg 360deg); }
+
+.lp { position: absolute; width: 5.6%; aspect-ratio: 1; transform: translate(-50%, -50%); transition: left 0.13s linear, top 0.13s linear; z-index: 2; padding: 0; border: 0; background: transparent; cursor: default; }
+
+.lp svg { width: 100%; height: 100%; display: block; }
+
+.ludo-grid { border-color: var(--accent); box-shadow: 0 0 26px oklch(0.8 0.14 200 / 0.3); background: oklch(0.18 0.04 268); }
+
+.lc { border-color: oklch(1 0 0 / 0.07); }
+
+.lc.yard-in { background: oklch(0.2 0.04 268); }
+
+.lc.hc { background: color-mix(in srgb, var(--yc) 55%, oklch(0.2 0.04 268)); }

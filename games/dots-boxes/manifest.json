@@ -1,0 +1,19 @@
+{
+  "id": "dots-boxes",
+  "name": "Dots & Boxes",
+  "category": "brain",
+  "icon": "🔲",
+  "description": "Draw lines between dots. Close a box to claim it.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

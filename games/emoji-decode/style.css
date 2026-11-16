@@ -1,0 +1,4 @@
+/* Emoji Decode - styles only this game uses. */
+.k-qtext:has(.ed-emo) { grid-template-rows: auto auto; align-content: center; gap: 4px; }
+.ed-cat { font-size: 0.45em; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.ed-emo { font-size: clamp(44px, 15vw, 76px); line-height: 1.1; letter-spacing: 4px; }

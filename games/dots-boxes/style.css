@@ -1,0 +1,6 @@
+/* Dots & Boxes - styles that only this game uses. */
+/* dots and boxes */
+
+.dots-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.dots-svg { filter: drop-shadow(0 0 3px oklch(0.8 0.14 210 / 0.5)); }

@@ -1,0 +1,19 @@
+{
+  "id": "snakes-ladders",
+  "name": "Snakes & Ladders",
+  "category": "luck",
+  "icon": "🐍",
+  "description": "Roll, climb ladders, slide down snakes. First to square 100 wins.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

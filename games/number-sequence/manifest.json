@@ -1,0 +1,19 @@
+{
+  "id": "number-sequence",
+  "name": "Number Sequence",
+  "category": "brain",
+  "icon": "\ud83d\udcc8",
+  "description": "Spot the pattern and pick the next number.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

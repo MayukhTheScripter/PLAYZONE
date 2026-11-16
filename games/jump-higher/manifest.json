@@ -1,0 +1,19 @@
+{
+  "id": "jump-higher",
+  "name": "Jump Higher",
+  "category": "arcade",
+  "icon": "\ud83e\udd98",
+  "description": "Bounce up the platforms as high as you can.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

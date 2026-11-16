@@ -1,0 +1,14 @@
+{
+  "id": "lantern-quest",
+  "name": "Lantern Quest",
+  "category": "arcade",
+  "icon": "🏮",
+  "description": "Full-screen sword-and-bow adventure: 10 levels, 10 bosses, 30 monsters. Co-op with friends or the Computer.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": { "min": 1, "max": 4 },
+  "cpu": true,
+  "modes": ["local", "online"],
+  "trust": "host",
+  "turnBased": false
+}

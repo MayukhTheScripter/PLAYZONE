@@ -1,0 +1,19 @@
+{
+  "id": "emoji-decode",
+  "name": "Emoji Decode",
+  "category": "brain",
+  "icon": "\ud83d\udd24",
+  "description": "Guess the movie, song or phrase from the emoji.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": true
+}

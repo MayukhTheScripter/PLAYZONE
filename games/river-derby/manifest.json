@@ -1,0 +1,19 @@
+{
+  "id": "river-derby",
+  "name": "River Derby",
+  "category": "arcade",
+  "icon": "🏎️",
+  "description": "Dodge traffic and shove rival cars into the river.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": false
+}

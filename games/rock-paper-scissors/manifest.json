@@ -1,0 +1,20 @@
+{
+  "id": "rock-paper-scissors",
+  "name": "Rock Paper Scissors",
+  "category": "party",
+  "icon": "✂️",
+  "description": "Everyone picks in secret. Reveal together and score.",
+  "kind": "iframe",
+  "entry": "index.html",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "cpu": true,
+  "modes": [
+    "local"
+  ],
+  "trust": "host",
+  "turnBased": false,
+  "replaces": "rock-paper-scissors"
+}

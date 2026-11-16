@@ -1,0 +1,9 @@
+/* Color Match */
+.cm-bar { display: flex; gap: 10px; padding: 4px 6px 0; }
+.cm-btn { flex: 1; min-height: 64px; border: 3px solid #fff3; border-radius: 16px; color: #0008; font-family: var(--display); font-size: 22px; font-weight: 800; cursor: pointer; touch-action: manipulation; }
+.cm-btn:active { transform: scale(0.94); filter: brightness(1.2); }
+
+/* buttons float over the bottom of the play field */
+.cm-bar { position: absolute; left: 8px; right: 8px; bottom: 8px; z-index: 6; opacity: 0.5; padding: 0; }
+.cm-btn { min-height: 58px; }
+.cm-btn:active { opacity: 1; }

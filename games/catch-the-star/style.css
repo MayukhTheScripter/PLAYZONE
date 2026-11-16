@@ -1,0 +1,6 @@
+/* Catch the Star - styles only this game uses. */
+.cs-top { display: flex; justify-content: space-between; align-items: center; font-family: var(--display); font-size: clamp(18px, 5vw, 28px); padding: 0 6px; }
+.cs-t::after { content: " s"; font-size: 0.6em; color: var(--muted); }
+.cs-l { font-size: 0.8em; letter-spacing: 2px; }
+.cs-s::before { content: "Score "; font-size: 0.6em; color: var(--muted); }
+.cs-host { flex: 1; min-height: 0; display: flex; flex-direction: column; }
